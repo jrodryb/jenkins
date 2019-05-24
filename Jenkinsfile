@@ -7,7 +7,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Hello world from Jenkins!!'
-		echo 'SELECTED BRANCH: ${params.BRANCH}'
+		echo "SELECTED BRANCH: ${params.BRANCH}"
         sh '''uname -a
 whoami
 pwd'''
